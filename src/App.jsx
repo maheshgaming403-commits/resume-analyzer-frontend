@@ -30,7 +30,7 @@ function App() {
     formData.append('resume', file);
 
     try {
-      const res = await fetch('http://localhost:5000/api/analyze', {
+      const res = await fetch('https://resume-backend-aam6.onrender.com/api/analyze', {
         method: 'POST',
         body: formData,
       });
